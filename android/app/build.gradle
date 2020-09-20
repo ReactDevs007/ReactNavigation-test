@@ -78,17 +78,17 @@ import com.android.build.OutputFile
 
 apply plugin: "com.android.application"
 //start
-project.ext.envConfigFiles = [
-    debug: ".env",
-    release: ".env.production",
-]
+// project.ext.envConfigFiles = [
+//     debug: ".env",
+//     release: ".env.production",
+// ]
 //end
 
 apply from: project(':react-native-config').projectDir.getPath() + "/dotenv.gradle"
-project.ext.envConfigFiles = [
-    debug: ".env",
-    release: ".env.production",
-]
+// project.ext.envConfigFiles = [
+//     debug: ".env",
+//     release: ".env.production",
+// ]
 
 project.ext.react = [
     entryFile: "index.js",
@@ -166,15 +166,15 @@ android {
     signingConfigs {
         debug {
             storeFile file('google_key_store')
-            storePassword 'sc0rb0t'
+            storePassword 'aaa'
             keyAlias 'release'
-            keyPassword 'sc0rb0t'
+            keyPassword 'aaa'
         }
 	release {
 	    storeFile file('google_key_store')
-            storePassword 'sc0rb0t'
+            storePassword 'aaa'
             keyAlias 'release'
-            keyPassword 'sc0rb0t'
+            keyPassword 'aaa'
         }
     }
     buildTypes {
