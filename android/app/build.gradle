@@ -165,13 +165,13 @@ android {
     }
     signingConfigs {
         debug {
-            storeFile file('google_key_store')
-            storePassword 'aaa'
-            keyAlias 'release'
-            keyPassword 'aaa'
+               storeFile file('debug.keystore')
+            storePassword 'android'
+            keyAlias 'androiddebugkey'
+            keyPassword 'android'
         }
 	release {
-	    storeFile file('google_key_store')
+	    storeFile file('debug.keystore')
             storePassword 'aaa'
             keyAlias 'release'
             keyPassword 'aaa'
